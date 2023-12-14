@@ -23,19 +23,19 @@ if (fuelType >= 0 && fuelType <= 3) {
             if (balance >= 0 ) {
                 let gasolineBalance = gasolineLiter*gasoline
         if (balance < gasolineBalance) {
-            calculate.innerHTML = `Satın almak istediğiniz gasolinein toplam tutarı ${gasolineBalance} Türk Lirası iken sizin güncel balanceniz ise ${balance} Türk Lirası olduğundan ötürü satın alma işleminiz balance yetersizliğinden reddedilmiştir.`
+            calculate.innerHTML = `Since the total share of the gasoline you want to purchase is ${gasolineBalance} Turkish Lira and your current balance is ${balance} Turkish Lira, your purchase has been rejected due to lack of balance.`
         } else {
-            calculate.innerHTML = `Satın almak istediğiniz gasolinein toplam tutarı ${gasolineBalance} Türk Lirası iken sizin güncel balanceniz ise ${balance} Türk Lirası olduğundan ötürü satın alma işleminiz başarıyla gerçekleştirilmiştir.`
+            calculate.innerHTML = `Since the total amount of gasoline you want to purchase is ${gasolineBalance} Turkish Lira and your current balance is ${balance} Turkish Lira, your purchase has been completed successfully.`
         }
             } else (
-                calculate.innerHTML = `Lütfen geçerli bir mevcut balance giriniz.`
+                calculate.innerHTML = `Please enter a valid available balance.`
             )
         } else (
-            calculate.innerHTML = `Lütfen geçerli bir gasoline litresi giriniz.`
+            calculate.innerHTML = `Please enter a valid liter of gasoline.`
         )
     }
 } else (
-    calculate.innerHTML = `Lütfen geçerli bir yakıt türü numarası giriniz.`
+    calculate.innerHTML = `Please enter a valid fuel type number.`
 )
 
 
@@ -47,19 +47,19 @@ if (fuelType >= 0 && fuelType <= 3) {
             if (balance >= 0) {
                 let lpgBalance = lpgLiter*lpg
         if (balance < lpgBalance) {
-            calculate.innerHTML = `Satın almak istediğiniz LPG'nin toplam tutarı ${lpgBalance} Türk Lirası iken sizin güncel balanceniz ise ${balance} Türk Lirası olduğundan ötürü satın alma işleminiz balance yetersizliğinden reddedilmiştir.`
+            calculate.innerHTML = `Since the total amount of LPG you want to purchase is ${lpgBalance} Turkish Lira and your current balance is ${balance} Turkish Lira, your purchase has been rejected due to insufficient balance.`
         } else {
-            calculate.innerHTML = `Satın almak istediğiniz LPG'nin toplam tutarı ${lpgBalance} Türk Lirası iken sizin güncel balanceniz ise ${balance} Türk Lirası olduğundan ötürü satın alma işleminiz başarıyla gerçekleştirilmiştir.`
+            calculate.innerHTML = `Since the total amount of LPG you want to purchase is ${lpgBalance} Turkish Lira and your current balance is ${balance} Turkish Lira, your purchase has been completed successfully.`
         }
             } else (
-                calculate.innerHTML = `Lütfen geçerli bir mevcut balance giriniz.`
+                calculate.innerHTML = `Please enter a valid available balance.`
             )
         } else (
-            calculate.innerHTML = `Lütfen geçerli bir LPG litresi giriniz.`
+            calculate.innerHTML = `Please enter a valid LPG liter.`
         )
     }
 } else (
-    calculate.innerHTML = `Lütfen geçerli bir yakıt türü numarası giriniz.`
+    calculate.innerHTML = `Please enter a valid fuel type number.`
 )
 
 
@@ -73,15 +73,15 @@ if (fuelType >= 0 && fuelType <= 3) {
         if (balance < dieselBalance) {
             calculate.innerHTML = `Since the total amount of diesel you want to buy is ${dieselBalance} Turkish Lira and your current balance is ${balance} Turkish Lira, your purchase has been rejected because your balance is insufficient.`
         } else {
-            calculate.innerHTML = `Satın almak istediğiniz dieselin toplam tutarı ${dieselBalance} Türk Lirası iken sizin güncel balanceniz ise ${balance} Türk Lirası olduğundan ötürü satın alma işleminiz başarıyla gerçekleştirilmiştir.`
+            calculate.innerHTML = `Since the total amount of diesel you want to purchase is ${dieselBalance} Turkish Lira and your current balance is ${balance} Turkish Lira, your purchase has been completed successfully.`
         }
             } else (
-                calculate.innerHTML = `Lütfen geçerli bir mevcut balance giriniz.`
+                calculate.innerHTML = `Please enter a valid available balance.`
             )
         } else (
-            calculate.innerHTML = `Lütfen geçerli bir diesel litresi giriniz.`
+            calculate.innerHTML = `Please enter a valid diesel liter.`
         )
     }
 } else (
-    calculate.innerHTML = `Lütfen geçerli bir yakıt türü numarası giriniz.`
+    calculate.innerHTML = `Please enter a valid fuel type number.`
 )
