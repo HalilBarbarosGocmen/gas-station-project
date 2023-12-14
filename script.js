@@ -14,21 +14,21 @@ let calculate = document.querySelector('#calculate')
 
 
 
-let yakıtTuru = Number(prompt(yakitMetni))
-if (yakıtTuru >= 0 && yakıtTuru <= 3) {
-    if (yakıtTuru == 1) {
-        let gasolineLitre = Number(prompt('Please enter how many liters of gasoline you would like to buy.'))
-        if (gasolineLitre > 0 && Number ) {
-            let account = Number(prompt('Please enter your current balance.'))
-            if (account >= 0 ) {
-                let gasolineHesap = gasolineLitre*gasoline
-        if (account < gasolineHesap) {
-            calculate.innerHTML = `Satın almak istediğiniz gasolinein toplam tutarı ${gasolineHesap} Türk Lirası iken sizin güncel accountniz ise ${account} Türk Lirası olduğundan ötürü satın alma işleminiz account yetersizliğinden reddedilmiştir.`
+let fuelType = Number(prompt(yakitMetni))
+if (fuelType >= 0 && fuelType <= 3) {
+    if (fuelType == 1) {
+        let gasolineLiter = Number(prompt('Please enter how many liters of gasoline you would like to buy.'))
+        if (gasolineLiter > 0 && Number ) {
+            let balance = Number(prompt('Please enter your current balance.'))
+            if (balance >= 0 ) {
+                let gasolineBalance = gasolineLiter*gasoline
+        if (balance < gasolineBalance) {
+            calculate.innerHTML = `Satın almak istediğiniz gasolinein toplam tutarı ${gasolineBalance} Türk Lirası iken sizin güncel balanceniz ise ${balance} Türk Lirası olduğundan ötürü satın alma işleminiz balance yetersizliğinden reddedilmiştir.`
         } else {
-            calculate.innerHTML = `Satın almak istediğiniz gasolinein toplam tutarı ${gasolineHesap} Türk Lirası iken sizin güncel accountniz ise ${account} Türk Lirası olduğundan ötürü satın alma işleminiz başarıyla gerçekleştirilmiştir.`
+            calculate.innerHTML = `Satın almak istediğiniz gasolinein toplam tutarı ${gasolineBalance} Türk Lirası iken sizin güncel balanceniz ise ${balance} Türk Lirası olduğundan ötürü satın alma işleminiz başarıyla gerçekleştirilmiştir.`
         }
             } else (
-                calculate.innerHTML = `Lütfen geçerli bir mevcut account giriniz.`
+                calculate.innerHTML = `Lütfen geçerli bir mevcut balance giriniz.`
             )
         } else (
             calculate.innerHTML = `Lütfen geçerli bir gasoline litresi giriniz.`
@@ -39,20 +39,20 @@ if (yakıtTuru >= 0 && yakıtTuru <= 3) {
 )
 
 
-if (yakıtTuru >= 0 && yakıtTuru <= 3) {
-    if (yakıtTuru == 2) {
-        let lpgLitre = Number(prompt('Please enter how many liters of LPG you would like to purchase.'))
-        if (lpgLitre > 0 && Number ) {
-            let account = Number(prompt('Please enter your current balance.'))
-            if (account >= 0) {
-                let lpgHesap = lpgLitre*lpg
-        if (account < lpgHesap) {
-            calculate.innerHTML = `Satın almak istediğiniz LPG'nin toplam tutarı ${lpgHesap} Türk Lirası iken sizin güncel accountniz ise ${account} Türk Lirası olduğundan ötürü satın alma işleminiz account yetersizliğinden reddedilmiştir.`
+if (fuelType >= 0 && fuelType <= 3) {
+    if (fuelType == 2) {
+        let lpgLiter = Number(prompt('Please enter how many liters of LPG you would like to purchase.'))
+        if (lpgLiter > 0 && Number ) {
+            let balance = Number(prompt('Please enter your current balance.'))
+            if (balance >= 0) {
+                let lpgBalance = lpgLiter*lpg
+        if (balance < lpgBalance) {
+            calculate.innerHTML = `Satın almak istediğiniz LPG'nin toplam tutarı ${lpgBalance} Türk Lirası iken sizin güncel balanceniz ise ${balance} Türk Lirası olduğundan ötürü satın alma işleminiz balance yetersizliğinden reddedilmiştir.`
         } else {
-            calculate.innerHTML = `Satın almak istediğiniz LPG'nin toplam tutarı ${lpgHesap} Türk Lirası iken sizin güncel accountniz ise ${account} Türk Lirası olduğundan ötürü satın alma işleminiz başarıyla gerçekleştirilmiştir.`
+            calculate.innerHTML = `Satın almak istediğiniz LPG'nin toplam tutarı ${lpgBalance} Türk Lirası iken sizin güncel balanceniz ise ${balance} Türk Lirası olduğundan ötürü satın alma işleminiz başarıyla gerçekleştirilmiştir.`
         }
             } else (
-                calculate.innerHTML = `Lütfen geçerli bir mevcut account giriniz.`
+                calculate.innerHTML = `Lütfen geçerli bir mevcut balance giriniz.`
             )
         } else (
             calculate.innerHTML = `Lütfen geçerli bir LPG litresi giriniz.`
@@ -63,20 +63,20 @@ if (yakıtTuru >= 0 && yakıtTuru <= 3) {
 )
 
 
-if (yakıtTuru >= 0 && yakıtTuru <= 3) {
-    if (yakıtTuru == 3) {
-        let dieselLitre = Number(prompt('Please enter how many liters of diesel you would like to buy.'))
-        if (dieselLitre > 0 && Number ) {
-            let account = Number(prompt('Please enter your current balance.'))
-            if (account >= 0) {
-                let dieselHesap = dieselLitre*diesel
-        if (account < dieselAccount) {
-            calculate.innerHTML = `Since the total amount of diesel you want to buy is ${dieselAccount} Turkish Lira and your current balance is ${balance} Turkish Lira, your purchase has been rejected because your balance is insufficient.`
+if (fuelType >= 0 && fuelType <= 3) {
+    if (fuelType == 3) {
+        let dieselLiter = Number(prompt('Please enter how many liters of diesel you would like to buy.'))
+        if (dieselLiter > 0 && Number ) {
+            let balance = Number(prompt('Please enter your current balance.'))
+            if (balance >= 0) {
+                let dieselBalance = dieselLiter*diesel
+        if (balance < dieselBalance) {
+            calculate.innerHTML = `Since the total amount of diesel you want to buy is ${dieselBalance} Turkish Lira and your current balance is ${balance} Turkish Lira, your purchase has been rejected because your balance is insufficient.`
         } else {
-            calculate.innerHTML = `Satın almak istediğiniz dieselin toplam tutarı ${dieselHesap} Türk Lirası iken sizin güncel accountniz ise ${account} Türk Lirası olduğundan ötürü satın alma işleminiz başarıyla gerçekleştirilmiştir.`
+            calculate.innerHTML = `Satın almak istediğiniz dieselin toplam tutarı ${dieselBalance} Türk Lirası iken sizin güncel balanceniz ise ${balance} Türk Lirası olduğundan ötürü satın alma işleminiz başarıyla gerçekleştirilmiştir.`
         }
             } else (
-                calculate.innerHTML = `Lütfen geçerli bir mevcut account giriniz.`
+                calculate.innerHTML = `Lütfen geçerli bir mevcut balance giriniz.`
             )
         } else (
             calculate.innerHTML = `Lütfen geçerli bir diesel litresi giriniz.`
